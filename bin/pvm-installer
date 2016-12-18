@@ -3,4 +3,4 @@
 pip install --user virtualenvwrapper
 sudo ln -s ~/.local/bin/virtualenv /usr/bin/
 wget -P ~/.local/bin/ https://raw.githubusercontent.com/knoxknox/pvm/master/bin/pvm
-echo "source $HOME/.local/bin/pvm.sh" >> ~/.bashrc && source $HOME/.bashrc
+echo "source ~/.local/bin/pvm" >> ~/.bashrc && source ~/.bashrc && echo "PVM installed"
