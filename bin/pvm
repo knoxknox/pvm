@@ -1,0 +1,29 @@
+function pvm() {
+  case $1 in
+    'use' )
+      workon $2
+      ;;
+    'list' )
+      workon
+      ;;
+    'delete' )
+      rmvirtualenv $2
+      ;;
+    'remove' )
+      rmvirtualenv $2
+      ;;
+    'create' )
+      mkvirtualenv $2 -p $(which python)
+      ;;
+    * )
+      echo -e "\e[38;05;082muse\e[0m :: use given env"
+      echo -e "\e[38;05;082mlist\e[0m :: display env list"
+      echo -e "\e[38;05;082mcreate\e[0m :: create given env"
+      echo -e "\e[38;05;082mdelete\e[0m :: remove given env"
+      echo -e "\e[38;05;082mdeactivate\e[0m :: deactivate env"
+      ;;
+  esac
+}
+
+export WORKON_HOME=~/.pvm
+source ~/.local/bin/virtualenvwrapper.sh
