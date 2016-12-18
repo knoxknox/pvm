@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+pip install --user virtualenvwrapper
+sudo ln -s ~/.local/bin/virtualenv /usr/bin/
+wget -P ~/.local/bin/ https://github.com/knoxknox/pvm/blob/master/bin/pvm
+echo "source $HOME/.local/bin/pvm.sh" >> ~/.bashrc && source $HOME/.bashrc
