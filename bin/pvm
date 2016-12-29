@@ -13,7 +13,7 @@ function pvm() {
       rmvirtualenv $2
       ;;
     'create' )
-      mkvirtualenv $2 -p $(which python)
+      mkvirtualenv $2 -p ${3:-'/usr/bin/python'}
       ;;
     * )
       echo -e "\e[38;05;082muse\e[0m :: use given env"
