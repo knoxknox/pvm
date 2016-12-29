@@ -1,7 +1,7 @@
 # pvm
 pvm is a tool for managing parallel python environments.<br/>
 Based on `virtualenvwrapper` simplify work with several projects.<br/>
-Location of python interpreter: `/usr/bin/python` or `/usr/bin/python3`.
+Location of python interpreter: `/usr/bin/python2` or `/usr/bin/python3`.
 
 # Install pvm
 ```
